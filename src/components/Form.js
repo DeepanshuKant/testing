@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 
 const CBOR = require('cbor-web')
-
+// import cbor from 'cbor'
 // import CBOR from 'cbor-web'
 // import { randomStringFromServer } from '@simplewebauthn/server'
 
@@ -77,8 +77,8 @@ const Form = ({ type }) => {
                 challenge: Uint8Array.from(
                     "WhatAmIEvenDoingHereWithoutAnyInfo%454##@2", c => c.charCodeAt(0)),
                 rp: {
-                    name: "localhost",
-                    id: "http://localhost:3000/",
+                    name: "https://testing-gamma-steel.vercel.app/",
+                    id: "https://testing-gamma-steel.vercel.app/",
                 },
                 user: {
                     id: Uint8Array.from(
